@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Markdown Reader",
+  "version": "1.0.0",
+  "description": "A stylish markdown reader with themes and dark mode",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css", "themes.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Markdown Reader"
+  }
+}

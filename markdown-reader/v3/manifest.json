@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Markdown Renderer Pro",
+  "version": "1.0",
+  "description": "Markdown renderer with TOC, file explorer, KaTeX, and syntax highlighting",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "libs/marked.min.js",
+        "libs/prism.js",
+        "libs/katex.min.js",
+        "content.js"
+      ],
+      "css": [
+        "libs/prism.css",
+        "libs/katex.min.css",
+        "sidebar.css",
+        "markdown.css"
+      ]
+    }
+  ],
+  "permissions": ["activeTab"]
+}

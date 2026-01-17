@@ -1,0 +1,6 @@
+markdown-reader/
+├── manifest.json
+├── content.js
+├── style.css
+├── themes.css
+└── marked.min.js

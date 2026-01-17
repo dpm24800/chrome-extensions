@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.toolbar {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 10px;
+  z-index: 999;
+}
+
+.toolbar select,
+.toolbar button {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.layout {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#toc {
+  width: 240px;
+  padding: 40px 20px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  transition: transform 0.3s ease, width 0.3s ease;
+  background: var(--toc-bg, #1e1e1e);
+}
+
+#toc.collapsed {
+  transform: translateX(-100%);
+  width: 0;
+  padding: 0;
+}
+
+#toc a {
+  display: block;
+  margin-bottom: 6px;
+  color: #64748b;
+  text-decoration: none;
+}
+
+#toc a.h2 { margin-left: 12px; }
+#toc a.h3 { margin-left: 24px; }
+
+.md-container {
+  padding: 40px;
+  max-width: 900px;
+}
+
+body.light {
+  background: #ffffff;
+  color: #111;
+}

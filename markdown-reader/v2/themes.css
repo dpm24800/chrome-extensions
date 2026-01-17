@@ -1,0 +1,31 @@
+/* (GitHub / Notion / Obsidian */
+
+/* GitHub */
+[data-theme="github"] {
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+[data-theme="github"] pre {
+  background: #161b22;
+}
+
+/* Notion */
+[data-theme="notion"] {
+  background: #ffffff;
+  color: #2f3437;
+}
+
+[data-theme="notion"] pre {
+  background: #f6f6f6;
+}
+
+/* Obsidian */
+[data-theme="obsidian"] {
+  background: #1e1e1e;
+  color: #d4d4d4;
+}
+
+[data-theme="obsidian"] pre {
+  background: #111;
+}

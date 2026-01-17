@@ -1,0 +1,70 @@
+#md-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background: #f8f9fa;
+  border-left: 1px solid #ccc;
+  z-index: 9999;
+  overflow-y: auto;
+  transition: transform 0.3s;
+  font-family: Arial, sans-serif;
+}
+
+#md-sidebar.collapsed {
+  transform: translateX(100%);
+}
+
+#sidebar-toggle {
+  position: absolute;
+  left: -40px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#sidebar-tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  background: #f0f0f0;
+  border: none;
+}
+
+.tab-btn.active {
+  background: #fff;
+  font-weight: bold;
+}
+
+.tab-content {
+  display: none;
+  padding: 10px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+#toc-list li,
+#files-list li {
+  list-style: none;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+#toc-list li:hover,
+#files-list li:hover {
+  background: #e0e0e0;
+}

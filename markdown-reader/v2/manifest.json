@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Markdown Reader",
+  "version": "2.0",
+  "description": "Render Markdown files beautifully in Chrome",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css", "themes.css"],
+      "js": ["marked.min.js", "content.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
