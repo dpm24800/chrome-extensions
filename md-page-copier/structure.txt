@@ -1,0 +1,5 @@
+md-page-copier/
+├── manifest.json
+├── popup.html
+├── popup.js
+└── icon.png   (optional)

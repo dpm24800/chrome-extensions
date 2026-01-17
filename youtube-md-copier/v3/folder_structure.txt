@@ -1,0 +1,4 @@
+youtube-md-copier/
+│── manifest.json
+│── background.js
+│── content.js

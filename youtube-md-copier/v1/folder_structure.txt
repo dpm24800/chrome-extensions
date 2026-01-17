@@ -1,0 +1,4 @@
+youtube-md-copier/
+│── manifest.json
+│── popup.html
+│── popup.js

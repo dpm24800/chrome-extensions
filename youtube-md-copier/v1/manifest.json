@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Markdown Copier",
+  "version": "1.0",
+  "description": "Copy YouTube video title and URL as Markdown",
+  "permissions": ["activeTab", "clipboardWrite"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

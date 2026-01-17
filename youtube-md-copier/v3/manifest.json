@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Markdown Copier",
+  "version": "2.0",
+  "description": "Copy YouTube video title and URL as Markdown",
+  "permissions": ["activeTab", "scripting", "clipboardWrite"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Copy YouTube Markdown"
+  },
+  "commands": {
+    "copy-markdown": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      },
+      "description": "Copy YouTube video as Markdown"
+    }
+  }
+}

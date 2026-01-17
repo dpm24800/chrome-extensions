@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "MD Page Copier",
+  "description": "Copy current page as Markdown link",
+  "version": "1.0",
+  "permissions": ["activeTab", "clipboardWrite"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Copy page as Markdown"
+  }
+}
